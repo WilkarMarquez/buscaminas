@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Buscaminas</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='../Css/estilos.css'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src='../Js/main.js'></script>
+    </head>
+    <body>
+        <div class="pagina">
+            <div class="contenedor" oncontextmenu="return false">
+                <div class="menu">
+                    <div class="dificultad">
+                        <select name="" id="selectDificultad">
+                            <option value="facil" selected>Fácil</option>
+                            <option value="medio">Medio</option>
+                            <option value="dificil">Difícil</option>
+                        </select>
+                    </div>
+                    <div class="marcadores">
+                        <div class="marca">
+                            <i class="fas fa-flag bandera" id="bandera"></i>
+                            <h2 id="banderasPorColocar">10</h2>
+                        </div>
+                        <div class="marca">
+                            <i class="far fa-clock" id="reloj"></i>
+                            <h2 id="cronometro">000</h2>
+                        </div>
+                    </div>
+                    <div class="opciones">
+                        <img src="../img/volumen-activo.png" alt="" id="vol">
+                        <h2>x</h2>       
+                    </div>
+                </div>
+                <div class="tablero">
+                    
+                </div>
+            </div>
+
+            <div class="pop-up">
+                <div class="pop-up-wrap">
+                    <div class="titulo">
+                        <div>
+                            <i class="far fa-clock"></i>
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div>
+                            <p id="time">---</p>
+                            <p id="record">---</p>
+                        </div>
+                    </div>
+                    <div class="btnReintentar">
+                        <button><i class="fas fa-redo-alt"></i><h1>Reintentar</h1></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
